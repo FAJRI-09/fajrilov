@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Video</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(180deg, #020617, #0f172a);
+      color: white;
+    }
+
+    .header {
+      text-align: center;
+      padding: 22px 16px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+
+    .header p {
+      margin-top: 6px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    .container {
+      max-width: 420px;
+      margin: auto;
+      padding: 16px;
+    }
+
+    .card {
+      background: #1e293b;
+      border-radius: 18px;
+      padding: 14px;
+      margin-bottom: 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+
+    video {
+      width: 100%;
+      border-radius: 14px;
+      margin-bottom: 10px;
+    }
+
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .desc {
+      font-size: 13px;
+      opacity: 0.75;
+      line-height: 1.5;
+    }
+
+    .back {
+      display: block;
+      margin: 26px auto 10px;
+      text-align: center;
+      padding: 12px 18px;
+      background: linear-gradient(135deg, #38bdf8, #2563eb);
+      color: white;
+      text-decoration: none;
+      border-radius: 14px;
+      font-size: 14px;
+      width: fit-content;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      opacity: 0.5;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>🎥 Galeri Video</h1>
+    <p>Potongan momen yang tersimpan</p>
+  </div>
+
+  <div class="container">
+
+    <div class="card">
+      <video controls>
+        <source src="momen1.mp4" type="video/mp4">
+      </video>
+      <div class="title">Video 1</div>
+      <div class="desc">Momen sederhana yang berharga</div>
+    </div>
+
+    <div class="card">
+      <video controls>
+        <source src="momen2.mp4" type="video/mp4">
+      </video>
+      <div class="title">Video 2</div>
+      <div class="desc">Kenangan yang terekam diam-diam</div>
+    </div>
+
+    <div class="card">
+      <video controls>
+        <source src="my1.mp4" type="video/mp4">
+      </video>
+      <div class="title">Video 3</div>
+      <div class="desc">Cerita kecil dalam satu klip</div>
+    </div>
+
+    <a href="../index.html" class="back">⬅ Kembali ke Beranda</a>
+
+    <div class="footer">
+      © 2026 • Galeri Video by Fajri
+    </div>
+
+  </div>
+
+</body>
+</html>

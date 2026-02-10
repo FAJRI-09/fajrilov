@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Foto</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(180deg, #020617, #0f172a);
+      color: white;
+    }
+
+    /* HERO */
+    .hero {
+      position: relative;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .hero-text {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 16px;
+      background: linear-gradient(transparent, rgba(0,0,0,0.85));
+    }
+
+    .hero-text h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+
+    .hero-text p {
+      margin-top: 6px;
+      font-size: 14px;
+      opacity: 0.85;
+    }
+
+    /* CONTAINER */
+    .container {
+      max-width: 420px;
+      margin: auto;
+      padding: 16px;
+    }
+
+    /* QUOTE */
+    .quote {
+      background: #1e293b;
+      border-radius: 16px;
+      padding: 16px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+
+    /* GALERI */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 14px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+      transition: transform 0.2s ease;
+    }
+
+    .gallery img:active {
+      transform: scale(0.96);
+    }
+
+    /* BUTTON */
+    .back {
+      display: block;
+      margin: 28px auto 10px;
+      text-align: center;
+      padding: 12px;
+      background: linear-gradient(135deg, #38bdf8, #2563eb);
+      color: white;
+      text-decoration: none;
+      border-radius: 14px;
+      font-size: 14px;
+      width: fit-content;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      opacity: 0.5;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <img src="my-hero.jpg" alt="Hero Foto">
+    <div class="hero-text">
+      <h1>📷 Galeri Foto</h1>
+      <p>Kumpulan momen & cerita sederhana</p>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="quote">
+      “Setiap foto punya cerita,<br>
+      walau hanya kita yang mengerti.”
+    </div>
+
+    <!-- GALERI FOTO -->
+    <div class="gallery">
+      <img src="my1.jpg" alt="Foto 1">
+      <img src="my2.jpg" alt="Foto 2">
+      <img src="my3.jpg" alt="Foto 3">
+      <img src="my4.jpg" alt="Foto 4">
+      <img src="my5.jpg" alt="Foto 5">
+    </div>
+
+    <a href="../index.html" class="back">⬅ Kembali ke Beranda</a>
+
+    <div class="footer">
+      © 2026 • Galeri Foto by Fajri
+    </div>
+
+  </div>
+
+</body>
+</html>
